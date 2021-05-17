@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Linearlayou xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="StartPlay"
+            android:text="歡迎修課"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="StartPlay"
+            android:text="展翅飛翔"
+            android:textSize="18sp" />
+
+
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="StartPlay"
+            android:text="Love"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <VideoView
+        android:id="@+id/vdv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+
+
+</Linearlayou >
